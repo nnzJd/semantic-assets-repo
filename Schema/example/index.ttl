@@ -6,6 +6,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix licences: <https://w3id.org/italia/controlled-vocabulary/licences/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://w3id.org/italia/schema/person/v202108.01/person.oas3.yaml> a dcatapit:Dataset ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
@@ -23,10 +24,13 @@ and other interfaces.""" ;
                         cpv:PersonTitle ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC> .
 
-cpv:Person a owl:Ontology ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
-cpv:PersonTitle a owl:Ontology ;
-    <http://www.w3.org/2000/01/rdf-schema#label> "Person Title" .
+<https://w3id.org/italia/onto/CPV/Person>
+    a owl:Ontology
+    rdfs:label "Person" .
+
+<https://w3id.org/italia/onto/CPV/PersonTitle>
+    a owl:Ontology
+    rdfs:label "Person Title" .
 
 <https://w3id.org/italia/schema/person/v202108.01/OAS3.yaml> a dcatapit:Distribution ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
