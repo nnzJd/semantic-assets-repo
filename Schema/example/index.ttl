@@ -18,7 +18,7 @@ and other interfaces.""" ;
     dct:rightsHolder <http://spcdata.digitpa.gov.it/Amministrazione/agid> ;
     dct:title "The Person schema" ;
     owl:versionInfo "202108.01.00" ;
-    dcat:distribution <https://raw.githubusercontent.com/ioggstream/json-semantic-playground/master/assets/schemas/person/v202108.01/person.oas3.yaml> ;
+    dcat:distribution <https://w3id.org/italia/schema/person/v202108.01/OAS3.yaml> ;
     admsapt:hasKeyClass cpv:Person ,
                         cpv:PersonTitle ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC> .
@@ -28,10 +28,11 @@ cpv:Person a owl:Ontology ;
 cpv:PersonTitle a owl:Ontology ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Person Title" .
 
-<https://raw.githubusercontent.com/ioggstream/json-semantic-playground/master/assets/schemas/person/v202108.01/person.oas3.yaml> a dcatapit:Distribution ;
+<https://w3id.org/italia/schema/person/v202108.01/OAS3.yaml> a dcatapit:Distribution ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dct:license licences:A21_CCBY40 ;
     dcat:accessURL <https://github.com/ioggstream/json-semantic-playground/tree/master/assets/schemas/person/v202108.01> ;
+    dcat:downloadURL <https://teamdigitale.github.io/openapi/master/definitions.yaml> ;
     dcat:mediaType "application/json" .
 
 <http://spcdata.digitpa.gov.it/Amministrazione/agid> a dcatapit:Agent,
