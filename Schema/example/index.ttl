@@ -25,11 +25,11 @@ and other interfaces.""" ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC> .
 
 <https://w3id.org/italia/onto/CPV/Person>
-    a owl:Ontology
+    a owl:Ontology ;
     rdfs:label "Person" .
 
 <https://w3id.org/italia/onto/CPV/PersonTitle>
-    a owl:Ontology
+    a owl:Ontology ;
     rdfs:label "Person Title" .
 
 <https://w3id.org/italia/schema/person/v202108.01/OAS3.yaml> a dcatapit:Distribution ;
